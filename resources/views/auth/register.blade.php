@@ -112,10 +112,9 @@
                       :value="false"
                     />
                     <label
-                      makasih
                       class="custom-control-label"
                       for="openStoreFalse"
-                      >Enggak, makasih</label>
+                      >Tidak, Terimakasih</label>
                   </div>
                 </div>
               <div class="form-group" v-if="is_store_open">
@@ -215,7 +214,7 @@
           name: "",
           email: "",
           is_store_open: true,
-          store_name: "",
+          store_name: " ",
           email_unavailable:false
           }
         },

@@ -86,7 +86,7 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'store_name' => isset($data['store_name']) ? $data['store_name'] : '',
             'categories_id' => isset($data['categories_id']) ? $data['categories_id'] : NULL,
-            'store_status' => isset($data['is_store_open']) ? 1 : 0,
+            'store_status' => isset($data['is_store_open']) ? 0 : 1,
         ]);
     }
     public function success(){
